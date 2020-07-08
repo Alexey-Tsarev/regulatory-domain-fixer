@@ -11,7 +11,23 @@ The repository already contains changed data
 So, you just need to clone this repo and run:  
 `sudo ./apply.sh`
 
-## Demo
+## Step by step
+Run:
+````
+curl -L https://raw.githubusercontent.com/Alexey-Tsarev/regulatory-domain-fixer/master/fix_regulatory_domain.sh | sh
+````
+or the same manually:
+````
+curl -L https://github.com/Alexey-Tsarev/regulatory-domain-fixer/archive/master.zip -o regulatory-domain-fixer.zip
+unzip regulatory-domain-fixer.zip
+cd regulatory-domain-fixer-master
+sudo ./apply.sh
+cd ..
+rm -rf regulatory-domain-fixer.zip regulatory-domain-fixer-master
+sudo reboot
+````
+
+## Result
 Before:
 ````
 iw reg set 00
