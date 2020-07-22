@@ -7,7 +7,7 @@ curl -L https://github.com/Alexey-Tsarev/regulatory-domain-fixer/archive/master.
 unzip regulatory-domain-fixer.zip
 cd regulatory-domain-fixer-master
 
-if [ "$(id -u -n)" == "root" ]; then
+if [ "$(id -u -n)" = "root" ]; then
     ./apply.sh
 else
     sudo ./apply.sh
